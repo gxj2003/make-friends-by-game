@@ -60,7 +60,7 @@ class SearchView extends React.Component{
                                key={button.id}
                                onClick={() => this.handleClick(button.id)}
                                >
-                               {button.text} - {button.clicked ? "添加" : "未添加"}
+                               {button.text} - {button.clicked ? "已添加" : "未添加"}
                                </Button>
                           ))}
                           </div>

@@ -140,24 +140,50 @@
     height : 0;
     width : 73vw;
     background-color: #00fde9;
+    line-height : 6vh;
     float : left;
-    padding-top: 0;
+    padding : 0;
+    margin : 0;
+    color : #000000;
 }
 
 .sending {
     height : 0;
     width : 10vw;
-    align-content: center;
-    background: #00fde9;
+    line-height : 4vh;
+    background: #000000;
     float : right;
+    margin : 0;
+    padding : 0;
 }
 
 .toolbarMenu {
     height : 100%;
     width : 73vw;
-    background-color: #00fde9;
+    background-color: #000000;
 }
 
 .sendingButton {
     background-color: #00fde9;
+}
+
+.inputBox {
+    min-height: 100% !important;
+    width : 100%;
+    float : end;
+}
+
+.ant-header-in-send {
+    height : 5vh;
+    width : 83vw;
+    padding : 0;
+    margin : 0;
+    background-color: #ffffff;
+}
+
+.ant-footer-in-send {
+    height : 20vh;
+    width : 83vw;
+    padding : 0;
+    margin : 0;
 }

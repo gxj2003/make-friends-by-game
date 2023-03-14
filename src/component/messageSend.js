@@ -1,6 +1,9 @@
 import React from 'react';
-import {Button, Menu} from 'antd';
+import {Button, Menu, Input, Layout} from 'antd';
 import type {MenuProps} from "antd";
+
+const {Header, Footer} = Layout
+const {TextArea} = Input
 
 const items : MenuProps['items'] = [
     {
@@ -20,12 +23,19 @@ export class MessageSend extends React.Component {
     render() {
         return (
             <div className={"messageSend"}>
-                <div className={"toolbar"}>
-                    <Menu items={items} className={"toolbarMenu"} mode={'horizontal'}></Menu>
-                </div>
-                <div className={"sending"}>
-                    <Button className={"sendingButton"}>发送信息</Button>
-                </div>
+                <Layout>
+                    <Header className={"ant-header-in-send"}>
+                        <div className={"toolbar"}>
+                            <Menu items={items} className={"toolbarMenu"} mode={'horizontal'}></Menu>
+                        </div>
+                        <div className={"sending"}>
+                            <Button className={"sendingButton"} block={true}>发送信息</Button>
+                        </div>
+                    </Header>
+                    <Footer className={"ant-footer-in-send"}>
+                        <TextArea className={"inputBox"}></TextArea>
+                    </Footer>
+                </Layout>
             </div>
         )
     }
